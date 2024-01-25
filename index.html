@@ -24,56 +24,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-pzjw8u+H6GOcwo/8c+C38Ggec0DBa2BE8B0FD7B3U2TAMGOnFq3R82dFsqGGKxIl" crossorigin="anonymous">
 
 <style>
     .font-manrope{
      font-family: "Manrope", sans-serif;
  
 }
+
     
 </style>
 </head>
 <body class="font-manrope">
     <header class="w-full h-full mx-auto">
         <nav>
+            <div class="navbar bg-base-100 px-24 py-12 text-sm" >
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                     <li><a>Blog</a></li>
+                     <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-3xl  font-extrabold">Hockey<span class=" text-[#FF4240;">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#FF4240;]">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                   <li><a>Blog</a></li>
+                   <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex items-center text-center gap-2 mx-auto" >
+                    <img src="Images/Frame (1).svg" alt="">
+                  <a class="btn bg-[#FF4240] text-[#FFF;]">Get Ticket</a>
+                </div>
+              </div>
 
         </nav>
         <!--Slider and carousel-->
-        <div class="container mx-auto lg: px-24 py-8 rounded-4 w-[1170] h-[450]" >
-            <div class="carousel w-full">
+        <div>
+            <div class="container  carousel w-[95%] mx-auto border-2 border-cyan-500 ml-12 ">
                    <!--slide-1-->
                 <div id="slide1" class="carousel-item relative w-full bg-[url(Images/1.png)">
-                
-                  <img src="Images/1.png" class="h-[60" />
+               
+                  <img class="h-full w-full " src="Images/1.png" alt="">
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
                  <!--slide-2-->
-                <div id="slide2" class="carousel-item relative w-full bg-[url()]">
-                  <img src="Images/hockey-3.avif" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                 <div id="slide1" class="carousel-item relative w-full bg-[url(Images/1.png)">
+               
+                    <img class="h-full w-full " src="Images/1.png" alt="">
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle">❮</a> 
+                      <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                  </div> 
                  <!--slide-3-->
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="Images/hockey-2.jpg" class="w-full" />
+                 <div id="slide3" class="carousel-item relative w-full">
+                  <img class="h-96" src="Images/hockey-2.jpg" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
-                </div> 
+                </div>  
                
                 </div>
-              </div>
+              
         </div>
 
     </header>
      <!--Professional related Hockeys-->
-    <main class="sm:container sm:mx-auto">
+    <main class="container mx-auto mt-24">
         <section class="">
            <div class>
             <h3 class="text-3xl font-bold text-center text-stone-950">Professional Hockeys Club</h3>
@@ -113,11 +146,11 @@
         <h1 class="font-bold text-3xl text-stone-950 mt-20">Program Sections</h1>
         <p class="w-2/3 mx-auto text-center text-slate-400 mt-5">we have several types of program sections. Individual and Group program for our students. We have also Junior, teenagers  and professional training sections as well.</p>
       </div>
-      <!--progarm card related-->
+      <!--program card related-->
       
-      <div class="mt-20 flex items-centert text-center justify-between mx-auto space-6 rounded-4 gap-6 w-[1170px] h-80">
+      <div class="mt-20 flex items-centert text-center justify-between mx-auto space-6 rounded-4 gap-6 w-[1170px] ">
         <!--First Card-->
-        <div class="card w-[1170px] bg-base-100 shadow-xl image-full">
+        <div class="card w-[1170px]  bg-base-100 shadow-xl image-full">
             <figure><img src="Images/2.png" alt="Shoes" /></figure>
             <div class="card-body">
               <h2 class="card-title text-[#FFF;]">Junior Program</h2>
@@ -140,7 +173,7 @@
           </div>
           </div>
           <!--Third Card-->
-          <div class="  flex items-center text-center mx-auto mt-6 bg-center align-center w-[1170] h-[450]">
+          <div class="  flex items-center text-center mx-auto mt-6 bg-center align-center w-[1170]">
             <div class="card w-[1170] mx-auto bg-base-100 shadow-xl image-full">
                 <figure><img src="Images/4.png" alt="Shoes" /></figure>
                 <div class="card-body">
@@ -154,49 +187,238 @@
           </div>
        </section>
        <!--Our New Products Section-->
-       <div class="my-32 items-center text-center mx-auto">
+       <div class="my-24 items-center text-center mx-auto border-2 border-green-400">
        <h2 class="text-[#131318;] font-bold text-3xl ">Our New Products</h2>
-       <p class="w-[500] font-base text-gray-400 text-center items-center mx-auto pt-6"> Here is our new arrival sports costume sections.You can purchase your need one from this site with cheaper price and easy way.</p>
+       <p class="w-[500] font-base text-gray-400 text-center items-center mx-auto pt-6"> Here is our new arrival sports costume section.You can purchase your need one from this site with cheaper price and easy way.</p>
     </div>
-    <!--first product item-->
-    <section>
-        <div>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row">
+    <!-- product items-->
+    <section class="border-2 border-cyan-500">
+     <!--first product -->
+        <div class="grid grid-cols lg:grid-cols-2 w-[1170px] h-20 gap-4 mx-auto border-2 border-amber-400">
+            <div class="border-2 border-red-500">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
                     <!--Ratings-->
                     
-                  <img src="Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <img  src="Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
                   <div>
                      <!--Ratings-->
-                     <div class="rating">
+                     <div class="rating gap-3">
                          <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
-                         <p class="text-gray-400">5.0</p>
+                         <p class="text-gray-400 gap-2">5.0</p>
                            <!--seen -->
-
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
                            <!--Love-->
                            <div class="rating gap-1">
                             <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
                            </div>
                     </div>
-                    <h1 class="text-5xl font-bold">World Cup Flags Football!</h1>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
                     <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
-                    <button class="btn btn-primary">Get Started</button>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- second product -->
+              <div class="border-2 border-red-500 h-full">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
+                    <!--Ratings-->
+                    
+                  <img src="Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                     <!--Ratings-->
+                     <div class="rating gap-3">
+                         <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
+                         <p class="text-gray-400 gap-2">5.0</p>
+                           <!--seen -->
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
+                           <!--Love-->
+                           <div class="rating gap-1 gap-2">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
+                           </div>
+                    </div>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
+                    <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- third product -->
+              <div class="">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
+                    <!--Ratings-->
+                    
+                  <img src="Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                     <!--Ratings-->
+                     <div class="rating gap-3">
+                         <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
+                         <p class="text-gray-400 gap-2">5.0</p>
+                           <!--seen -->
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
+                           <!--Love-->
+                           <div class="rating gap-1 gap-2">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
+                           </div>
+                    </div>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
+                    <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- fourth product -->
+              <div class="">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
+                    <!--Ratings-->
+                    
+                  <img src="Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                     <!--Ratings-->
+                     <div class="rating gap-3">
+                         <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
+                         <p class="text-gray-400 gap-2">5.0</p>
+                           <!--seen -->
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
+                           <!--Love-->
+                           <div class="rating gap-1 gap-2">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
+                           </div>
+                    </div>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
+                    <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- fifth product -->
+              <div class="">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
+                    <!--Ratings-->
+                    
+                  <img src="Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                     <!--Ratings-->
+                     <div class="rating gap-3">
+                         <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
+                         <p class="text-gray-400 gap-2">5.0</p>
+                           <!--seen -->
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
+                           <!--Love-->
+                           <div class="rating gap-1 gap-2">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
+                           </div>
+                    </div>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
+                    <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <!-- sixth product -->
+              <div class="">
+                <div class="hero-content flex-col lg:flex-row border-2 rounded-sm border-neutral-200">
+                    <!--Ratings-->
+                    
+                  <img src="Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                     <!--Ratings-->
+                     <div class="rating gap-3">
+                         <input type="radio" name="rating-2 5.0" class="mask mask-star-2 bg-orange-400" checked />
+                         <p class="text-gray-400 gap-2">5.0</p>
+                           <!--seen -->
+                           <img src="Images/Frame.png" alt="">
+                           <p>20</p>
+                           <!--Love-->
+                           <div class="rating gap-1 gap-2">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked />
+                            <p>200</p>
+                           </div>
+                    </div>
+                
+                    <h1 class="text-2xl font-bold">World Cup Flags Football!</h1>
+                    <p class="py-6">Here you can find world teams flags and t-shirts, you grab your desire one.</p>
+                   <div class="flex justify-between align-center items-center text-center">
+                    <p class="text-lg  text-[#FF4240;]">Price - $22.00</p>
+                    <div class="flex justify-between items-center align-center text-center gap-2">
+                    <img src="Images/Frame.svg" alt="">
+                    <P class="text-gray-400 gap-2">Delivery Fee : Free</P>
+                </div>
+                  </div>
+                   
                   </div>
                 </div>
               </div>
         </div>
-
-
-
-
-    </section>
-
-
-
-    </main>
-    <footer>
-
-    </footer>
+</section>
+  
+  <!-- clients related section -->
+   <div>
+          <!-- <h2>Clients Question</h2> -->
     
+    </div>
+    <section>
+        <div>
+         <img src="Images/11.png" alt="">
+        </div>
+        <div>
+
+        </div>
+    </section>
+    
+
+    <footer>
+  <h1> </h1>
+    </footer>
+</main>
 </body>
 </html>
